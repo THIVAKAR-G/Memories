@@ -6,7 +6,8 @@
 .container{
     position: relative;
     min-height: 100vh;
-    background: #ddd;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,218,0.8603816526610644) 50%, rgba(252,176,69,1) 100%);
 }
 .image-container h1{
     font-size: 40px;
