@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="image"><img src="images/SDC10059.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10060.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10070.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10071.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10072.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10075.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10079.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10080.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10092.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10094.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10099.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10103.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10106.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10109.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10120.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10122.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10126.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10130.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10133.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10134.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10139.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10140.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10156.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10158.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10171.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10175.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10179.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10183.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10202.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10204.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10212.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10225.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10253.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10257.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10268.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10269.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10274.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10286.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10292.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10327.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10346.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10350.JPG" alt=""></div>
+            <div class="image"><img src="images/SDC10372.JPG" alt=""></div>
+
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/SDC10052.JPG" alt="">
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+           image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+           }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
